@@ -36,6 +36,8 @@ class Solution:
                 if len(active_list)>1 and (active_list[-2]+active_list[-1]) in ["()","[]","{}"]:
                     # print("paired!")
                     active_list = active_list[:-2]
+                else:
+                    return False
             # print("afer processing:")
             # print(active_list)
             idx += 1
